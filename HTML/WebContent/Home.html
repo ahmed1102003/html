@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Foood</title>
+
+
+
+</head>
+
+<body>
+
+
+<h3>  Testing HTML page with Servlet </h3>
+</br>
+
+<h3> Foooooooooood  </h3>
+<h3>
+
+</h3>
+
+
+<form method= "post" action = "Auth" >
+
+Enter Food Type <input type = "text"  id = "foodtype" name = "foodtype" >  
+</br>
+ </br>
+
+Enter location   <input type= "text" id = "location" name ="location"> 
+</br>
+ </br>
+ 
+<% 
+ for (i=0; i < match.size(); i++) {
+    
+        out.println("<br/>");
+         
+        String um = (String)match.get(i);  
+         
+       
+        out.println("<span>"+um.foodtype+"</span>");
+        out.println("<img src='"+um.images+"' style='width:25px;width:25px;'>");
+        out.println("<span>"+um.location+"</span>");
+        out.println("<br/>");
+  
+    }
+
+
+%>
+
+
+<input type = "submit" value = "Search"  name ="Search"  id= "Search">
+
+</form>
+
+<img src="Arabicfood1.jpg" style="width:35px;width:40px;">
+
+</body>
+</html>
